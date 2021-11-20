@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <!-- Required links -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Add a google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Add bootstrap (a link for the menu icon) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link the icon of the website -->
+    <link rel="icon" href="images/logo3.png">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- Add a logo/nav-logo -->
+            <a href="index.html"><img src="images/logo6.png"></a>
+            <!-- Add nav links -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="pictures.html">GALLERY</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Hair Talk!</h1>
+    </section>
+
+    <!--Blog page content-->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/1.jpg">
+                <h2>OMG, totes snatched!</h2>
+                <p>
+                    Wigs or extensions may upgrade any hairstyle for every event, festival, or occasion. When it arises to wigs, they are prepared from two main materials: human hair and synthetic hair. <br>
+                    Human and synthetic wigs have their benefits. The wig or extension is becoming normal in acrylic nails, hair-shade, and shape-types, which immediately promote beauty, confidence, and overall elegance. <br>
+                    Nowadays, prove to be useful in offering wearers with simply available style changes, exposure, and luxurious style.
+                </p><br>
+                <p>
+                    Wigs or extensions may upgrade any hairstyle for every event, festival, or occasion. When it arises to wigs, they are prepared from two main materials: human hair and synthetic hair. <br>
+                    Human and synthetic wigs have their benefits. The wig or extension is becoming normal in acrylic nails, hair-shade, and shape-types, which immediately promote beauty, confidence, and overall elegance. <br>
+                    Nowadays, prove to be useful in offering wearers with simply available style changes, exposure, and luxurious style.
+                </p><br>
+                <p>
+                    Wigs or extensions may upgrade any hairstyle for every event, festival, or occasion. When it arises to wigs, they are prepared from two main materials: human hair and synthetic hair. <br>
+                    Human and synthetic wigs have their benefits. The wig or extension is becoming normal in acrylic nails, hair-shade, and shape-types, which immediately promote beauty, confidence, and overall elegance. <br>
+                    Nowadays, prove to be useful in offering wearers with simply available style changes, exposure, and luxurious style.
+                </p><br>
+                <p>
+                    Wigs or extensions may upgrade any hairstyle for every event, festival, or occasion. When it arises to wigs, they are prepared from two main materials: human hair and synthetic hair. <br>
+                    Human and synthetic wigs have their benefits. The wig or extension is becoming normal in acrylic nails, hair-shade, and shape-types, which immediately promote beauty, confidence, and overall elegance. <br>
+                    Nowadays, prove to be useful in offering wearers with simply available style changes, exposure, and luxurious style.
+                </p>
+
+            </div>
+
+            <div class="blog-right">
+                <h3>More About Our Brands</h3>
+                <div>
+                    <span>Bonita</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Magic</span>
+                    <span>28</span>
+                </div>
+
+                <div>
+                    <span>Lush</span>
+                    <span>15</span>
+                </div>
+
+                <div>
+                    <span>Ellen Wille</span>
+                    <span>34</span>
+                </div>
+
+                <div>
+                    <span>Louis Ferre</span>
+                    <span>42</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer -->
+<section class="footer">
+    <p><b style="font-family: cursive;">Beauty Defined By You</b>
+    </p>
+
+    <div class="icons">
+        <a href="www.facebook.com/Kgopi_L"><i class="fa fa-facebook"></i></a>
+        <a href="www.instagram.com/Kgopie_L"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by <b style="font-family: cursive;">Kgopi.L</b></p>
+</section>
+
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

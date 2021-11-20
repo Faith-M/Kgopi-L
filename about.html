@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <!-- Required links -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Add a google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Add bootstrap (a link for the menu icon) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link the icon of the website -->
+    <link rel="icon" href="images/logo3.png">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- Add a logo/nav-logo -->
+            <a href="index.html"><img src="images/logo6.png"></a>
+            <!-- Add nav links -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="pictures.html">GALLERY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- About us content -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the hair store for you!</h1>
+            <p>
+                Wigs or extensions may upgrade any hairstyle for every event, festival, or occasion. When it arises to wigs, they are prepared from two main materials: human hair and synthetic hair. <br>
+                Human and synthetic wigs have their benefits. The wig or extension is becoming normal in acrylic nails, hair-shade, and shape-types, which immediately promote beauty, confidence, and overall elegance. <br>
+                Nowadays, prove to be useful in offering wearers with simply available style changes, exposure, and luxurious style.
+
+                Wigs have become a main part of the beauty world. Wigs are great to wear because you can try many various hairstyles or hair shade without changing your original hair at all. <br>
+                With wigs, your hair can be good forever. If you wish them to remain of excellent quality for a long time, you have to take proper care of them. There are many reasons why women like wigs very much. <br>
+            </p>
+
+            <a href="pictures.html" class="hero-btn pink-btn">GALLERY</a>
+
+        </div>
+
+        <div class="about-col">
+            <img src="images/about1.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <p><b style="font-family: cursive;">Beauty Defined By You</b>
+    </p>
+
+    <div class="icons">
+        <a href="www.facebook.com/Kgopi_L"><i class="fa fa-facebook"></i></a>
+        <a href="www.instagram.com/Kgopie_L"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by <b style="font-family: cursive;">Kgopi.L</b></p>
+</section>
+
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

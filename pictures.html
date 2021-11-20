@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Required meta tags -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Online Store</title>
+   <!-- Required links -->
+   <link rel="stylesheet" href="style.css" type="text/css">
+   <!-- Add a google font -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <!-- Add bootstrap (a link for the menu icon) -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Link the icon of the website -->
+   <link rel="icon" href="images/logo3.png">
+
+<!--Required links-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  font-size: 17px;
+  background-image: radial-gradient(white, pink, purple);
+}
+
+#backV{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 20%;
+  background-color:red;
+}
+
+#myVideo{
+  margin-top: 30px;
+  margin-left: 210px;
+  height: 10%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+/* Gallery Slideshow */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background-color: transparent;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 25%;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -60px;
+  /*color: #ffc0cb;*/
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 25%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /*border: 1px solid #ffc0cb;*/
+  border: 1px solid white;
+    background: transparent;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  /*color: #f2f2f2;*/
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 58%;
+  margin-left: 49%;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.demo cursor{
+  background-color: #ffc0cb;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+  
+  <section class="sub-header">
+    <nav>
+        <!-- Add a logo/nav-logo -->
+        <a href="index.html"><img src="images/logo6.png" align="left"></a>
+        <!-- Add nav links --><br><br>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav><br><br>
+    <center><h1><b>GALLERY</b></h1></center>
+</section>
+
+
+  
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+  <!--video autoplay muted loop id="myVideo">
+    <source src="images/15.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video-->
+
+
+
+<!-- Background Image JS -->
+<!--script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script-->
+
+<!--Slideshow Gallery-->
+
+<br><br><br>
+<div class="container">
+
+  <center>
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/5.jpg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/6.jpg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/29.jpg" style="width:40%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/25.jpg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/26.jpg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/27.webp" style="width:40%">
+  </div>
+</center>
+
+   
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/5.jpg" style="width:100%" onclick="currentSlide(1)" alt="Black bodywaves CODE#2567">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/6.jpg" style="width:100%" onclick="currentSlide(2)" alt="Blonde bodywaves CODE#1178">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/29.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fringe Deep curls CODE#9732">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/25.jpg" style="width:100%" onclick="currentSlide(4)" alt="Deep waves CODE#0936">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/26.jpg" style="width:100%" onclick="currentSlide(5)" alt="Loose waves CODE#6730">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/27.webp" style="width:100%" onclick="currentSlide(6)" alt="Kinky curls CODE#6289">
+    </div>
+  </div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+</body>
+</html>

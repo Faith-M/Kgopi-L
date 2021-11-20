@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Email Code-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+
+    
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <!-- Required links -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Add a google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Add bootstrap (a link for the menu icon) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link the icon of the website -->
+    <link rel="icon" href="images/logo3.png">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- Add a logo/nav-logo -->
+            <a href="index.html"><img src="images/logo6.png"></a>
+            <!-- Add nav links -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="pictures.html">GALLERY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!--contact us-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d917908.5845479395!2d28.127371137172698!3d-26.014558912903436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1631146382767!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Birchleigh, Kempton Park, SA</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+27 84 328 7440</h5>
+                    <p>Monday to Saturday, 09h00 to 18h00</p>
+                </span>
+            </div>
+
+            <div>
+                <a href="www.gmail.com/lebeakgops22@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                <span>
+                    <h5>lebeakgops22@gmail.com</h5>
+                    <p>Get in touch with us</p>
+                </span>
+                
+            </div>
+        </div>
+
+        <div class="contact-col">
+            <form action="index.js" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                    <a href="mailto:lebeakgops22@gmail.com"><input type="button" class="hero-btn pink-btn" value="Send Email" method="" onclick="sendEmail()"/></a>
+                </form>  
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <p><b style="font-family: cursive;">Beauty Defined By You</b>
+    </p>
+
+    <div class="icons">
+        <a href="www.facebook.com/Kgopi_L"><i class="fa fa-facebook"></i></a>
+        <a href="www.instagram.com/Kgopie_L"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by <b style="font-family: cursive;">Kgopi.L</b></p>
+</section>
+
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
