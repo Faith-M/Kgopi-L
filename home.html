@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <title>Gallery Test</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<style>
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: #ffc0cb;*/
+    background-image: radial-gradient(white, pink, purple);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+figure{
+    width: 336px;
+    height: 300px;
+    position: relative;
+   /* background-color: #ffffff;*/
+    background-image: radial-gradient(white, pink, purple);
+    padding: 19px 19px 85px 19px;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #2c2c2c;
+    margin-top: 22px;
+}
+
+figure:before,
+figure:after{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 180px;
+    background-color: rgba(102, 102, 102, 0.6);
+    transform: rotate(-40deg);
+}
+
+figure:before{
+    top: 3px;
+    left: -55px;
+}
+
+figure:after{
+    bottom: 3px;
+    right: -60px;
+}
+
+.link{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #ffffff;
+}
+</style>
+
+<body>
+    <figure>
+        <img src="images/Logo.png">
+        <figcaption>All About Hair</figcaption>
+    </figure>
+
+   <a href="index.html" class="link">Click here to explore...</a>
+</body>
+</html>
